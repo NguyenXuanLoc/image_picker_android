@@ -36,7 +36,7 @@ public class PictureVideoPlayActivity extends PictureBaseActivity implements
         MediaPlayer.OnErrorListener, MediaPlayer.OnPreparedListener,
         MediaPlayer.OnCompletionListener, View.OnClickListener {
     private String videoPath;
-    private ImageButton ibLeftBack;
+    private ImageView ibLeftBack;
     private MediaController mMediaController;
     private VideoView mVideoView;
     private ImageView iv_play;
@@ -106,6 +106,7 @@ public class PictureVideoPlayActivity extends PictureBaseActivity implements
         tvConfirm.setVisibility(config.selectionMode
                 == PictureConfig.SINGLE
                 && config.enPreviewVideo && !isExternalPreview ? View.VISIBLE : View.GONE);
+        if(config.enPreviewVideo) tvConfirm.setVisibility(View.VISIBLE);
     }
 
     @Override

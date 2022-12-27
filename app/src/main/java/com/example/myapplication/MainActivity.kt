@@ -2,6 +2,8 @@ package com.example.myapplication
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle
+import android.util.Log
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.luck.picture.lib.PictureSelectionModel
 import com.example.myapplication.luck.picture.lib.PictureSelector
@@ -13,18 +15,20 @@ import com.luck.picture.lib.R
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
+//    var btnOnclick:TextView = findViewById(R.id.btnClick)
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
+    val model: PictureSelectionModel = PictureSelector.create(this)
+        .openGallery(PictureMimeType.ofAll())
+    model.filterMaxFileSize(6000000)
+    Utils.setLanguage(model, "vi")
+    setPhotoSelectOpt(model, 10, 100.0)
+    model.isGif(false)
+    model.videoMaxSecond(120)
+    resolveMedias(model)
 //        startActivity(Intent(this,PictureSelectorActivity::class.java))
-        val model: PictureSelectionModel = PictureSelector.create(this)
-            .openGallery( PictureMimeType.ofAll())
-        model.filterMaxFileSize(6000000)
-        Utils.setLanguage(model, "vi")
-        setPhotoSelectOpt(model,10,100.0)
-        model.isGif(false)
-        model.videoMaxSecond(120)
-        resolveMedias(model)
+
     }
 
     fun setPhotoSelectOpt(
@@ -69,6 +73,7 @@ class MainActivity : AppCompatActivity() {
                 // 结果回调
                 object : Thread() {
                     override fun run() {
+                        Log.e("TAG", "run: SIZE:"+ medias.size.toString())
                       /*  val resArr: MutableList<Any> = ArrayList()
                         for (media in medias) {
                             val map = HashMap<String, Any>()

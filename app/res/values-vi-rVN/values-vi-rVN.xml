@@ -11,13 +11,13 @@
     <string name="picture_choose_limit_seconds"> Chỉ có thể chọn ảnh giữa %1$ds và %2$ds giây</string>
     <string name="picture_choose_max_seconds">Bạn chỉ có thể chọn ảnh trong vòng %1$ds nhất</string>
     <string name="picture_choose_min_seconds">Không thể chọn video dưới %1$ds giây</string>
-    <string name="picture_completed">Đã hoàn thành</string>
-    <string name="picture_confirm">Được rồi</string>
+    <string name="picture_completed">Đã xong thành</string>
+    <string name="picture_confirm">Xong</string>
     <string name="picture_data_exception">Lấy ngoại lệ dữ liệu album…</string>
     <string name="picture_data_null">không có dữ liệu…</string>
     <string name="picture_default_original_image">Ảnh gốc</string>
-    <string name="picture_done">Hoàn thành</string>
-    <string name="picture_done_front_num">%1$d/%2$d Hoàn thành</string>
+    <string name="picture_done">Xong</string>
+    <string name="picture_done_front_num">%1$d/%2$d Xong</string>
     <string name="picture_editor">Soạnthảo</string>
     <string name="picture_empty">Bạn có thể sử dụng máy ảnh để chụp ảnh hoặc quay video</string>
     <string name="picture_empty_audio_title">Không có tập tin âm thanh\n</string>
@@ -26,7 +26,7 @@
     <string name="picture_gif_tag">gif</string>
     <string name="picture_go_setting">Chuẩn bị</string>
     <string name="picture_jurisdiction">Đọc thẻ nhớ bị từ chối</string>
-    <string name="picture_know">Được rồi</string>
+    <string name="picture_know">Xong</string>
     <string name="picture_long_chart">Hình dài</string>
     <string name="picture_message_audio_max_num">Bạn có thể chọn tối đa%1$sâm thanh</string>
     <string name="picture_message_max_num">Bạn có thể chọn tối đa%1$shình ảnh</string>
@@ -55,8 +55,8 @@
     <string name="picture_save_error">Lưu ảnh thất bại</string>
     <string name="picture_save_success">Hình ảnh được lưu vào</string>
     <string name="picture_select">Chọn</string>
-    <string name="picture_send">Hoàn</string>
-    <string name="picture_send_num">Hoàn(%1$d/%2$d)</string>
+    <string name="picture_send">Xong</string>
+    <string name="picture_send_num">xong(%1$d/%2$d)</string>
     <string name="picture_stop_audio">Dừng lại</string>
     <string name="picture_take_picture">Bắn</string>
     <string name="picture_tape">Ghi âm</string>
